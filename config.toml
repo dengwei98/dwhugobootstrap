@@ -1,14 +1,16 @@
-baseurl = "http://themes.gohugo.io/theme/bootstrap/"
+baseurl = "/"
 languageCode = "en-us"
-title = "Hugo Themes"
+title = "Dengwei98"
 author = "Steve Francia"
 copyright = "Copyright (c) 2008 - 2017, Steve Francia; all rights reserved."
 canonifyurls = true
 paginate = 3
 theme = "hugo-bootstrap"
-
+publishDir = "public"
+contentdir = "content"
 disqusShortname = "xxxxxx"
 googleAnalytics = "UA-XXXXXXX-1"
+
 
 [[menu.main]]
     name = "TAGS"
@@ -25,7 +27,16 @@ googleAnalytics = "UA-XXXXXXX-1"
     url = "/categories/"
 
 [[menu.main]]
-    name = "ABOUT ME"
+
+    name = "个人简历"
+    pre = "<i class='fa fa-tags'></i>"
+    weight = -110
+    identifier = "personal-resume"
+    url = "/post/dw-resume/"
+
+[[menu.main]]
+
+    name = "关于我们"
     pre = "<i class='fa fa-info-circle'></i>"
     weight = -90
     identifier = "about-me"
